@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" and dir="Itr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="style2.css">
+    <script src="signin.js"></script>
+
+</head>
+<body>
+<div class="center">
+    <h1>Admin Login</h1>
+    <form id="AdminLogin" action="#">
+        <div class="txt_field">
+            <input id="username" type = "text" required>
+            <span></span>
+            <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input id="password" type = "text" required>
+            <span></span>
+
+            <label>Password</label>
+
+        </div>
+        <button  onclick="validate()"> login</button>
+        <div class="txt_field">
+        <h2>Staff Login</h2>
+    <div id="StaffLogin"action="#">
+            <form action="login.js">
+                <div class="txt_field">
+                    <label for="StaffLogin"> </label>
+                    <div class="txt_field">
+                    <input type=text placeholder="Enter Staff Name" name="StaffLogin" required><label>StaffName</label>
+                        <div class="txt_field">
+                    <input type="password" placeholder="Enter Password" name="psw"
+                           required="required">
+                            <label>Password</label>
+
+                </div>
+                    </div>
+                </div>
+
+        <button  onclick="validate()"> login</button>
+        <div class="signup_link">
+            <div class="pass">Forgot Password?</div>
+            Not a member? <a href="#">Signup</a>
+        </div>
+
+
+
+</form>
+</div>
+<script src="signin.js"></script>
+
+</body>
+</html>

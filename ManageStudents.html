@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Tablestyle.css">
+    <script src="replace.js"></script>
+</head>
+<body>
+<nav>
+    <h>Hochschule für Technik und Wirtschaft Berlin</h>
+    <a href="./admin.html">HOME</a>
+    <a href="../index.html">STUDENTS</a>
+    <a href="../index.html">STAFF</a>
+</nav>
+<h>All Students</h>
+<button onclick="toggleForm()"> ADD</button>
+<button>Update</button>
+<button>Delete</button>
+
+<table class="content">
+<thead>
+    <tr>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Department</th>
+        <th>E-Mail</th>
+    </tr>
+</thead>
+    <tbody>
+    <tr>
+        <th>567315</th>
+        <th>Pavel</th>
+        <th>Graetz</th>
+        <th>21.06.1997</th>
+        <th>male</th>
+        <th>IT</th>
+        <th>pavel.gret@gmx.de</th>
+    </tr>
+    <th>522231</th>
+    <th>Max</th>
+    <th>Wasser</th>
+    <th>25.12.2000</th>
+    <th>male</th>
+    <th>IT</th>
+    <th>maxwasser@gmyx.de</th>
+
+    </tr>
+    <th>523114</th>
+    <th>Jan</th>
+    <th>Sieger</th>
+    <th>01.04.1990</th>
+    <th>male</th>
+    <th>IT</th>
+    <th>Janwinkler@gmyx.de</th>
+    </tbody>
+
+</table>
+
+<div class="form" style="display: none">
+    <form action="">
+        <label for="Student_Id">Student_Id</label> <input type="text"
+                                                          id="Student_Id" name="Student_Id"> <label for="First_Name">First_Name</label>
+        <input type="text" id="First_Name" name="First_Name"> <label
+            for="Last_Name">Last_Name</label> <input type="text" id="Last_Name"
+                                                     name="Last_Name"> <label for="DOB">DOB</label> <input
+            type="text" id="DOB" name="DOB"> <a>Gender</a> <label
+            for="Female">Female</label> <input type="radio" id="Female"
+                                               name="Gender" value="Female"> <label for="Men">Men</label> <input
+            type="radio" id="Men" name="Gender" value="Male"> <label
+            for="Other">Other</label> <input type="radio" id="Other"
+                                             name="Gender" value="Other"> <label for="Department">Department</label>
+        <select id="Department" name="Department">
+            <option value="Dep1">Dep1</option>
+            <option value="Dep2">Dep2</option>
+        </select> <label for="Email_ID">Email_ID</label> <input type="email"
+                                                                id="Email_ID" name="Email_ID"> <input type="submit"
+                                                                                                      value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
