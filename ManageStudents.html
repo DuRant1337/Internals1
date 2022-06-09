@@ -5,14 +5,36 @@
     <title>Title</title>
     <link rel="stylesheet" href="Tablestyle.css">
     <script src="replace.js"></script>
+
 </head>
-<body>
+<body onload="getTab()">
+
 <nav>
-    <h>Hochschule für Technik und Wirtschaft Berlin</h>
-    <a href="./admin.html">HOME</a>
-    <a href="../index.html">STUDENTS</a>
-    <a href="../index.html">STAFF</a>
+    <h1>Hochschule für Technik und Wirtschaft Berlin</h1>
+    <a href="./adminpage.html">HOME</a>
+    <a href="./ManageStudents.html">STUDENTS</a>
+    <a href="./ManageStaff.html">STAFF</a>
+
+    <ul>
+        <li><a href="#">Department</a>
+            <ul>
+                <li><a href="#"Applied Science>Applied Science</a></li>
+                <li><a href="#"Mathematics>Mathematics</a></li>
+                <li><a href="#"Applied Computer Science>Applied Computer Science</a></li>
+                <li><a href="#"Mathematics>Sport Science</a></li>
+            </ul>
+        </li>
+
+            <li><a href="#">Semester</a>
+                <ul>
+                    <li><a href="#"1>Fall</a></li>
+                    <li><a href="#"2>Winter</a></li>
+                    <li><a href="#"3>Summer</a></li>
+                        </ul>
+                    </li>
+            </ul>
 </nav>
+
 <h>All Students</h>
 <button onclick="toggleForm()"> ADD</button>
 <button>Update</button>
@@ -28,35 +50,11 @@
         <th>Gender</th>
         <th>Department</th>
         <th>E-Mail</th>
+        <th>Join Date </th>
+        <th></th>
     </tr>
 </thead>
-    <tbody>
-    <tr>
-        <th>567315</th>
-        <th>Pavel</th>
-        <th>Graetz</th>
-        <th>21.06.1997</th>
-        <th>male</th>
-        <th>IT</th>
-        <th>pavel.gret@gmx.de</th>
-    </tr>
-    <th>522231</th>
-    <th>Max</th>
-    <th>Wasser</th>
-    <th>25.12.2000</th>
-    <th>male</th>
-    <th>IT</th>
-    <th>maxwasser@gmyx.de</th>
-
-    </tr>
-    <th>523114</th>
-    <th>Jan</th>
-    <th>Sieger</th>
-    <th>01.04.1990</th>
-    <th>male</th>
-    <th>IT</th>
-    <th>Janwinkler@gmyx.de</th>
-    </tbody>
+    <tbody id ="StudentTable">
 
 </table>
 
@@ -81,6 +79,7 @@
                                                                                                       value="Submit">
     </form>
 </div>
-
+<script src="AlgoSort.js"></script>
 </body>
+
 </html>

@@ -2,9 +2,13 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-family: sans-serif;
-
-
 }
+h1{
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    background-color: white;
+}
+
 table.content{
     border-collapse: collapse;
     margin: 32px 0;
@@ -12,6 +16,7 @@ table.content{
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     }
+
 table.content thead tr {
     background-color: cyan;
     color: white;
@@ -28,4 +33,51 @@ table.content tbody tr{
 }
 table.content tbody tr:nth-last-of-type{
     border-bottom: 2px solid #8e44ad;
+}
+nav{
+    width: 100%;
+    height: 47px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.11);
+}
+ ul{
+    float: right;
+}
+ ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+
+
+}
+ul li a{
+
+    font-size: 20px;
+    font-family: Arial;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+
+}
+ ul li a:hover{
+    background-color:silver;
+}
+ ul li ul{
+    display: none;
+    position: absolute;
+    background-color: cyan;
+    padding: 7px;
+    border-radius: 0px 0px 12px 12px;
+}
+ ul li:hover ul {
+    display: block;
+}
+
+
+ul li ul li a{
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+
 }
